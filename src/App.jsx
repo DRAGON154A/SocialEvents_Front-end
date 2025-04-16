@@ -1,16 +1,18 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import { useEffect } from 'react'
 import './App.css'
+import Header from './components/header.jsx'
 
 function App() {
-  const [events, setEvents] = useState([])
+  const [count, setCount] = useState(0)
+
   return (
-<h1>
-  OK
-</h1>
+    <>
+      <h1>This is for the test</h1>
+    </>
   )
 }
+
 
 export default App
