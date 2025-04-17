@@ -40,6 +40,7 @@ function Login()
                 </form>
             <div className="button-container">
                         <button type="submit" value="Connexion" id="submit">
+                        Connexion
                         </button>
              </div>
 
