@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState } from 'react'
+import { useState } from 'react';
 import './styles/header.css';
 import event from '../assets/event.png';
 import home from '../assets/home.png';
@@ -8,6 +8,7 @@ import groupe from '../assets/groupe.png';
 
 function Header()
 {
+    // cette partie est fait pour faire les mises à jours de la vue   
     const [count,setCount] = useState(0)
     const [activeButton, setActiveButton] = useState('home');
     const handleClick=(name)=>{
