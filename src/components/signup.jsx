@@ -26,11 +26,11 @@ function Signup()
          </div>
                     <div >
                         <p><a href="#">Inscription</a></p>
-                    <input type="submit" value="Connexion" id="submit"/><br />
+                <input type="submit" value="Connexion" id="submit"/><br />
                     </div>
                     <div id="apiConnexion">
-                       <a href="#"><img src={Facebook} alt="facebook_image" /></a> 
-                       <a href="#"><img src={Google} alt="google_image" /></a> 
+                       <a href="#" className="social-icon"><img src={Facebook} alt="facebook_image" /></a> 
+                       <a href="#" className="social-icon"><img src={Google} alt="google_image" /></a> 
                     </div>
                 </div>
     )

@@ -1,0 +1,91 @@
+/* SearchBar.css */
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 12px 20px;
+  padding-right: 45px; /* Espace pour l'icône */
+  border: 2px solid #e0e0e0;
+  border-radius: 30px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+  background-color: #f8f8f8;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.search-bar input:focus {
+  border-color: #7b1fa2;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(123, 31, 162, 0.1);
+}
+
+.search-bar button {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.search-bar button:hover {
+  background-color: #f0e5ff;
+}
+
+.search-icon {
+  font-size: 18px;
+  color: #7b1fa2;
+}
+
+/* Animation lorsque la barre est active */
+.search-bar.active input {
+  padding-left: 25px;
+}
+
+/* Version responsive */
+@media (max-width: 768px) {
+  .search-bar {
+    max-width: 100%;
+  }
+  
+  .search-bar input {
+    padding: 10px 15px;
+    padding-right: 40px;
+    font-size: 14px;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .search-bar input {
+    background-color: #333;
+    border-color: #444;
+    color: #f0f0f0;
+  }
+  
+  .search-bar input:focus {
+    border-color: #9c27b0;
+    background-color: #222;
+  }
+  
+  .search-icon {
+    color: #ba68c8;
+  }
+  
+  .search-bar button:hover {
+    background-color: #4a148c;
+  }
+}
